@@ -1,0 +1,433 @@
+.swiper--pagination {
+  .swiper-pagination-bullet-active {
+    background: #222;
+  }
+  .swiper-pagination-bullet {
+    margin: 0 6px !important;
+  }
+}
+
+.swiper_button {
+  background: transparent;
+  border: none;
+}
+.swiper-pagination-bullet {
+  transform: scale(0.8);
+  transition: transform 0.3s;
+}
+.swiper--pagination .swiper-pagination-bullet-active {
+  transform: scale(1);
+}
+// arrow y center
+.arrowY-center-position {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9;
+
+  .swiper_button {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 35px rgba(5, 16, 54, 0.1);
+    border: none;
+    border-radius: 50%;
+    color: #051036;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #eb6753;
+      color: #ffffff;
+    }
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    &._prev {
+      margin-left: -12px;
+    }
+    &._next {
+      margin-right: -12px;
+    }
+    @media (max-width: 767px) {
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+    }
+  }
+}
+
+.arrow-with-border {
+  .swiper_button {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 35px rgba(5, 16, 54, 0.1);
+    border: 1px solid #181a20;
+    border-radius: 50%;
+    color: #051036;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #eb6753;
+      color: #ffffff;
+    }
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    &._prev {
+      margin-left: -12px;
+    }
+    &._next {
+      margin-right: -12px;
+    }
+    @media (max-width: 767px) {
+      width: 38px;
+      height: 38px;
+      line-height: 38px;
+    }
+  }
+  &.arrow-pos {
+    position: absolute;
+    left: 47%;
+    bottom: 30px;
+    z-index: 2;
+    @media (max-width: 768px) {
+      left: 80%;
+    }
+    @media (max-width: 576px) {
+      left: 73%;
+    }
+    .swiper_button {
+      &._prev,
+      &_.next {
+        margin: 0;
+      }
+      &._next {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.dark_nav {
+  .swiper_button {
+    color: #fff;
+  }
+  .swiper--pagination .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+  }
+  .swiper--pagination .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+  }
+  .swiper-button-disabled {
+    color: #aaa;
+  }
+}
+.home7-main-slider {
+  .swiper-scrollbar-drag {
+    height: 3px;
+    background: #fff;
+    top: -3px;
+  }
+  .custom-scroll {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    position: relative;
+    top: -1px;
+  }
+}
+.d-position {
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  left: 30px;
+  transform: translateY(-50%);
+  @media (max-width: 1200px) {
+    top: auto;
+    bottom: 0;
+    display: block !important;
+
+    .swiper_button {
+      margin-left: 12px;
+    }
+  }
+  .swiper_button {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+  .swiper_button._prev {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  &.end-pos {
+    right: 30%;
+    left: auto;
+  }
+}
+// dark slide pagination
+._dark {
+  .swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 0.8;
+    transform: scale(0.8);
+    transition: transform 0.3s;
+  }
+  .swiper--pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .swiper_button {
+    color: #fff;
+  }
+}
+
+.ps-v4-hero-slider-2 .arrowY-center-position .swiper_button._next {
+  margin-right: 100px;
+}
+.ps-v4-hero-slider-2 .arrowY-center-position .swiper_button._prev {
+  margin-left: 100px;
+}
+.ps-v4-hero-slider-2 .arrowY-center-position .swiper_button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.dropdownModel {
+  background-color: rgb(229, 229, 229);
+  width: '100%';
+  height: 300px;
+  padding: 20px;
+  margin-top: 3px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 105%;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 200px; /* Maximum height for the dropdown */
+  overflow-y: auto; /* Add scrollbar when content exceeds max height */
+  //   border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  //   background-color: rgb(223, 208, 208);
+}
+
+.dropdown-option {
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.scrollable-text-container {
+  width: 200px; /* Set width as per your requirement */
+  //   height: 100px; /* Set height as per your requirement */
+  overflow: scroll; /* Add scrollbar when content exceeds container */
+  //   border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.scrollable-text {
+  /* Custom text styling */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  //   line-height: 1.5;
+}
+
+.location-card {
+  display: flex;
+  gap: 20px;
+  border-radius: 30px;
+  padding-right: 20px;
+  width: 550px;
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 1px solid black;
+  padding-top: 20px;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: 640px) {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 530px) {
+    width: 420px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 440px) {
+    width: 330px;
+    margin-bottom: 20px;
+  }
+}
+
+.smallbox {
+  background: black;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  width: 12px;
+  height: 12px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 8px;
+  line-height: 0px;
+}
+.boxContainer {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  position: relative;
+
+  &:hover {
+    .smallbox {
+      display: flex;
+    }
+  }
+}
+
+.categorybox {
+  background: black;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  width: 12px;
+  height: 12px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 8px;
+  line-height: 0px;
+}
+.categoryContainer {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+  flex-direction: row;
+  position: absolute;
+  cursor: pointer;
+  background-color: white;
+  border: 0.5px solid gray;
+  padding: 2px 5px;
+  border-radius: 8px;
+
+  &:hover {
+    .categorybox {
+      display: flex;
+    }
+  }
+}
+.mapParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mapcont {
+  width: 35px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+
+  &:hover {
+    background-color: rgb(250, 250, 250);
+  }
+  &:active {
+    background-color: rgb(241, 236, 236);
+  }
+}
+
+.sidebar-categories {
+  cursor: pointer;
+  &:hover {
+    color: #f09587;
+    transition: all 0.3s;
+  }
+  &:active {
+    color: #f93a1c;
+    transform: translate(1px, 0.5px);
+  }
+}
+.category-text {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.category-text-cont {
+  color: white;
+  margin: 0px;
+  padding: 0p;
+  box-sizing: border-box;
+}
+.tagsContainer {
+  display: flex;
+  gap: 10px;
+  flex-direction: row wrap;
+  align-items: center;
+}
+.tagsBoxStyle {
+  border: 1px solid black;
+  padding: 7px 10px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
